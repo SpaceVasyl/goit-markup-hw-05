@@ -17,14 +17,14 @@
         <!--Логотип-->
         <div class="conteiner header-position">
             <a href="index.html" class="logo un-underline"><span class="blue">Web</span>Studio</a>
-            <nav>
+            <nav class="position">
                 <!--Посилання в шапці сторінки-->
                 <ul class="list navig-list">
-                    <li class="blue-stripe1">
-                        <a href="./index.html" class="link un-underline hatpage blue-stripe1 active ">Студія</a>
+                    <li class="position">
+                        <a href="./index.html" class="link un-underline hatpage active">Студія</a>
                     </li>
-                    <li class="blue-stripe2">
-                        <a href="./portfolio.html" class="link un-underline hatpage blue-stripe2 ">Портфоліо</a>
+                    <li class="position">
+                        <a href="./portfolio.html" class="link un-underline hatpage ">Портфоліо</a>
                     </li>
                     <li>
                         <a href="#" class="link un-underline hatpage">Контакти</a>
@@ -55,7 +55,7 @@
         <section class="section first-part"><!--Перша секція з кнопкою для замовлення-->
             <div class="conteiner first-part-box">
                 <h1 class="first-part-title">Ефективні рішення для<br> вашого бізнесу</h1>
-                <button type="button" class="button-kn">Замовити послугу</button>
+                <button type="button" class="button-kn" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <section class="section"><!--Друга секція - наші переваги  -->
@@ -106,9 +106,24 @@
             <div class="conteiner">
                 <h2 class="third-sec-head">Чим ми займаємося</h2>
                 <ul class="list third-sec-list">
-                    <li><img src="./images/img-keyboard.jpg" alt="клівіатура" width="370" height="294"></li>
-                    <li><img src="./images/img-tel-comp.jpg" alt="телефон з комп'ютером" width="370" height="294"></li>
-                    <li><img src="./images/img-palette.jpg" alt="палітра" width="370" height="294"></li>
+                    <li class="desktop-apps">
+                        <div class="div-pos">
+                            <img  src="./images/img-keyboard.jpg" alt="клівіатура" width="370" height="294">
+                            <p class="desktop-text">Десктопні додатки</p>
+                        </div>
+                    </li>
+                    <li class="desktop-apps">
+                        <div class="div-pos">
+                            <img src="./images/img-tel-comp.jpg" alt="телефон з комп'ютером" width="370" height="294">
+                            <p class="desktop-text">Мобільні додатки</p>
+                        </div>
+                    </li>
+                    <li class="desktop-apps">
+                        <div class="div-pos">
+                            <img src="./images/img-palette.jpg" alt="палітра" width="370" height="294">
+                            <p class="desktop-text">Дизайнерські рішення</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -369,5 +384,15 @@
             </div>
         </div>
     </footer>
+    <div class="cover-darkness is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-modal" data-modal-close>
+                <svg class="insta-icon icons-color">
+                    <use href="./images/sprites.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
