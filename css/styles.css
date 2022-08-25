@@ -97,6 +97,32 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.blue-stripe1::after {
+  content: '';
+  width: 48px;
+  height: 4px;
+  background-color: var(--accent-color);
+  position: absolute;
+  top: 53.5px;
+  left: 249px;
+  border-radius: 4px;
+  opacity: 0;
+}
+.blue-stripe2::after {
+  content: '';
+  width: 78px;
+  height: 4px;
+  background-color: var(--accent-color);
+  position: absolute;
+  top: 53.5px;
+  left: 342px;
+  border-radius: 4px;
+  opacity: 0;
+}
+.link .un-underline .hatpage .active .blue-stripe1::after {
+  opacity: 1;
+}
+
 .header .hatpage:hover,
 .header .hatpage:focus {
   color: var(--accent-color);
@@ -149,6 +175,7 @@ header {
 .header-position {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .navig-list {
   display: flex;
